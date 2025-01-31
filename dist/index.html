@@ -5,25 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VITE</title>
-  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-OyLPPb9S.js"></script>
-  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/style-Dp9qxW2B.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-Dc0srOIG.js"></script>
+  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/style-CnXcR8Gq.css">
 </head>
 
 <body class="page-home">
     <div id="wrapper">
-        <header>
-            <h1 class="logo"><a href="#">VITE</a></h1>
-
+        <header id="header">
+            <h1 class="logo"><a href="#"><span>VITE</span></a></h1>
             <nav class="main-menu">
-                <ul>
-                    <li>login</li>
-                    <li>cart</li>
-                    <li>collections</li>
+                <ul role="list">
+                    <li>
+                        <a class="visual_link" href="#"><i class="fa fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a class="visual_link" href=""><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="item-collection">
+                        <a class="visual_link" href="#">collections</a>
+                    </li>
                 </ul>
-                <button type="button">menu opener</button>
+                <button class="main-menu-opener" type="button">menu opener</button>
             </nav>
         </header>
-        <main class="main">
+        <main id="main">
             <section class="visual">
                 <div class="vite-item">
                     <div class="vite-item__holder">
@@ -48,11 +54,10 @@
                                 <img src="https://apleshakov88.github.io/vite-test01/dist/assets/vite-horizontal-u19M8oAh.png" alt="image">
                             </div>
                             <div class="vite-item__content-cover">
-                                <h2 class="vite-item__title"
-                                data-anchor-target="#visual-02"
-                                data-bottom-top="opacity: 0; transform: translateY(100px)"
-                                data-center="opacity: 1; transform: translateY(0px)"
-                                data-top-bottom="opacity: 0; transform: translateY(-100px)">
+                                <h2 class="vite-item__title" data-anchor-target="#visual-02"
+                                    data-bottom-top="opacity: 0; transform: translateY(100px)"
+                                    data-center="opacity: 1; transform: translateY(0px)"
+                                    data-top-bottom="opacity: 0; transform: translateY(-100px)">
                                     <a href="#" class="visual_link">SOME VITE TEXT</a>
                                 </h2>
                             </div>
@@ -80,20 +85,20 @@
             <section class="category-promo category-right"></section>
             <section class="category-exclusive"></section>
         </main>
-        <footer class="footer">
+        <footer id="footer">
             <div class="footer-top">
                 <nav class="footer-nav">
-                    <ul>
-                        <li>about</li>
-                        <li>contact us</li>
+                    <ul role="list">
+                        <li><a class="visual_link" href="#">about</a></li>
+                        <li><a class="visual_link" href="#">contact us</a></li>
                     </ul>
                 </nav>
                 <div class="social-media">
-                    social-media
+                    <a class="visual_link" target="_blank" href="https://www.instagram.com/boldtype.conceptstore/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="copyrigt"></p>
+                <p class="copyrigt">Copyright © 1993 - 2025 Boldtype®. All rights reserved.</p>
             </div>
         </footer>
     </div>

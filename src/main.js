@@ -5,7 +5,7 @@ window.jQuery = window.$ = jQuery;
 document.addEventListener("DOMContentLoaded", () => {
   initGlitchAnimation();
   initPageLoadedClass();
-  initScroller();
+  initSkrollr();
   initClassOnScroll();
 });
 
@@ -24,7 +24,7 @@ function initPageLoadedClass() {
   document.body.classList.add(className);
 }
 
-function initScroller() {
+function initSkrollr() {
   skrollr.init();
 }
 
@@ -43,13 +43,11 @@ function initViewportClass(items, options) {
   const win = jQuery(window);
 
   function handleVisibility(items) {
-    console.log("items", items);
     const wBottom = win.scrollTop() + win.innerHeight();
 
     items.each(function () {
       const item = jQuery(this);
-      console.log("item", item);
-      if (item.offset().top > wBottom) {
+      if (item.offset().top + 50 < wBottom) {
         item.addClass(settings.className);
       } else {
         item.removeClass(settings.className);

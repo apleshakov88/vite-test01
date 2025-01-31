@@ -57,10 +57,18 @@ select {
   }
 }
 
-body,
 html {
   height: 100%;
+}
+
+body,
+html {
   scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+.fa {
+  font-family: FontAwesome;
 }
 
 :root {
@@ -76,9 +84,11 @@ html {
   flex-direction: column;
   min-height: 100%;
   width: 100%;
+  background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
 }
 
 .page-soon {
+  display: flex;
   background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
   background-size: cover;
   color: var(--white);
@@ -327,7 +337,6 @@ html {
     transition: left var(--outline-duration) var(--outline-duration);
   }
 
-  &:hover,
   &.js-visible {
     &:after {
       top: var(--indent-medium);
@@ -379,31 +388,32 @@ html {
     text-transform: uppercase;
     font-size: 40px;
   }
+}
 
-  .visual_link {
-    color: var(--white);
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
+.visual_link {
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 0;
-      border-bottom: 2px solid currentColor;
-      transition: width 0.2s;
-    }
-    &:hover:after {
-      width: 100%;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid currentColor;
+    transition: width 0.2s;
+  }
+  &:hover:after {
+    width: 100%;
   }
 }
 
 /* SOON-2 */
 .page-soon-2 {
+  display: flex;
   background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
   background-size: cover;
   color: var(--white);
@@ -475,16 +485,12 @@ html {
 
   .text-content {
     font-size: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(50px);
     text-align: center;
+    padding: var(--indent-big) var(--indent-medium);
   }
 
   .text {
     white-space: nowrap;
-    margin: 0 0 40px;
   }
 
   .typed-text {
@@ -502,6 +508,10 @@ html {
       blinking 1s 0.5s infinite;
   }
 
+  .instagram-wrapper {
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+  }
   .instagram {
     height: 100px;
     width: 100px;
@@ -700,10 +710,104 @@ html {
 
 !!!!!7. Add svg font?
 
-8. Add to git
-10. Add class on scroll
-+++9. Add scroller
-+++10. Add animated border for vite-item
+
 
 9. Create header + footer
 */
+.skrollr body {
+    height: auto !important;
+}
+
+.logo {
+  color: var(--white);
+
+  a {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 5px;
+    border: 2px solid currentColor;
+    padding: 5px 10px;
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  span {
+    margin-right: -5px;
+  }
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--indent-small) var(--indent-medium);
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  z-index: 5;
+
+  .logo {
+    margin: 0 var(--indent-medium) 0 0;
+  }
+
+  .main-menu {
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    color: var(--white);
+
+    .main-menu-opener {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+
+      li {
+        margin-left: var(--indent-small);
+      }
+
+      a {
+        padding: var(--indent-small);
+      }
+    }
+  }
+}
+
+#main {
+  padding: var(--indent-big);
+}
+
+#footer {
+  padding: var(--indent-medium) var(--indent-big);
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  color: var(--white);
+
+  .footer-top {
+    order: 1;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .social-media {
+    margin: 0 0 0 var(--indent-small);
+  }
+
+  .footer-nav {
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    li {
+      text-transform: uppercase;
+      padding: 0 var(--indent-small);
+    }
+  }
+  .footer-bottom {
+    order: 0;
+  }
+}
