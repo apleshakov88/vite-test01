@@ -117,6 +117,7 @@ html {
   .title {
     transition: transform 0.1s;
     transform-origin: 50% 50%;
+    transform: scale(1) translateY(0);
 
     &:hover {
       transform: scale(1.05) translateY(-5px);
@@ -135,45 +136,43 @@ html {
     color: var(--white);
     text-decoration: none;
 
-    &:hover {
-      &:after,
-      &:before {
-        animation-duration: 2s;
-      }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(
+        45deg,
+        #ff595e,
+        #ffca3a,
+        #8ac926,
+        #1982c4,
+        #6a4c93,
+        #ff6700
+      );
+      background-size: 400%;
+      z-index: -1;
+      animation: glow 5s linear infinite;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &:after {
+      filter: blur(25px);
+      transform: translate3d(0, 0, 0);
+    }
+
+    &:hover:after,
+    &:hover:before {
+      animation-duration: 2s;
     }
   }
 
   .heading span {
     margin-right: -6vw;
-  }
-
-  .heading::before,
-  .heading::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(
-      45deg,
-      #ff595e,
-      #ffca3a,
-      #8ac926,
-      #1982c4,
-      #6a4c93,
-      #ff6700
-    );
-    background-size: 400%;
-    z-index: -1;
-    animation: glow 10s linear infinite;
-    width: 100%;
-    border-radius: var(--border-radius);
-  }
-
-  .heading::after {
-    filter: blur(25px);
-    transform: translate3d(0, 0, 0);
   }
 
   .text-content {
@@ -715,7 +714,7 @@ html {
 9. Create header + footer
 */
 .skrollr body {
-    height: auto !important;
+  height: auto !important;
 }
 
 .logo {
