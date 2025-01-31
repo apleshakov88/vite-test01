@@ -746,6 +746,7 @@ html {
   display: flex;
   align-items: center;
   z-index: 5;
+  height: 60px;
 
   .logo {
     margin: 0 var(--indent-medium) 0 0;
@@ -777,7 +778,7 @@ html {
 }
 
 #main {
-  padding: var(--indent-big);
+  padding: 60px var(--indent-big) var(--indent-big);
 }
 
 #footer {
