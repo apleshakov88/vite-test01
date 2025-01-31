@@ -3,10 +3,21 @@ import skrollr from "skrollr";
 window.jQuery = window.$ = jQuery;
 
 document.addEventListener("DOMContentLoaded", () => {
+  initGlitchAnimation();
   initPageLoadedClass();
   initScroller();
   initClassOnScroll();
 });
+
+function initGlitchAnimation() {
+  const items = jQuery(".js-glitch-animation");
+  const animClass = "js-animation-active";
+
+  setInterval(() => {
+    items.addClass(animClass);
+    setTimeout(() => items.removeClass(animClass), 600);
+  }, 10000);
+}
 
 function initPageLoadedClass() {
   const className = "page-loaded";
@@ -35,9 +46,9 @@ function initViewportClass(items, options) {
     console.log("items", items);
     const wBottom = win.scrollTop() + win.innerHeight();
 
-    items.each(function() {
-        const item = jQuery(this);
-        console.log("item", item);
+    items.each(function () {
+      const item = jQuery(this);
+      console.log("item", item);
       if (item.offset().top > wBottom) {
         item.addClass(settings.className);
       } else {
