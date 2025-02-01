@@ -21,7 +21,9 @@ function initSwiper() {
     },
     scrollbar: {
       el: ".swiper-scrollbar",
-    }
+      draggable: true,
+    },
+    slidesPerView: "auto",
   });
 }
 
