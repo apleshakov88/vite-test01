@@ -8,9 +8,9 @@ window.jQuery = window.$ = jQuery;
 document.addEventListener("DOMContentLoaded", () => {
   initGlitchAnimation();
   initPageLoadedClass();
-  initSkrollr();
   initClassOnScroll();
   initSwiper();
+  initSkrollr();
 });
 
 function initSwiper() {
