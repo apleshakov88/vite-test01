@@ -25,10 +25,9 @@ function initPageLoadedClass() {
 }
 
 function initSkrollr() {
-  const isTouch = matchMedia("(hover: none)").matches;
-  if (isTouch) return;
-
-  skrollr.init();
+    skrollr.init({
+      forceHeight: false
+    });
 }
 
 function initClassOnScroll() {

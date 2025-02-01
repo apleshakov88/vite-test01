@@ -79,7 +79,7 @@ html {
   --indent-big: 40px;
 }
 
-#wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -709,15 +709,6 @@ html {
   }
 }
 
-/* TODO:
----6. Play with css + images folders structure
-
-!!!!!7. Add svg font?
-
-
-
-9. Create header + footer
-*/
 .skrollr body {
   height: auto !important;
 }
