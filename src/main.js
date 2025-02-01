@@ -1,5 +1,8 @@
+// TODO: Structure https://github.com/rahxd1/simple-vite-template-vanilla/tree/main/src
 import jQuery from "jquery";
 import skrollr from "skrollr";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 window.jQuery = window.$ = jQuery;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,7 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
   initPageLoadedClass();
   initSkrollr();
   initClassOnScroll();
+  initSwiper();
 });
+
+function initSwiper() {
+  const swiper = new Swiper(".swiper-js", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    }
+  });
+}
 
 function initGlitchAnimation() {
   const items = jQuery(".js-glitch-animation");
@@ -25,13 +41,13 @@ function initPageLoadedClass() {
 }
 
 function initSkrollr() {
-    skrollr.init({
-      forceHeight: false
-    });
+  skrollr.init({
+    forceHeight: false,
+  });
 }
 
 function initClassOnScroll() {
-  const viteItems = jQuery(".vite-item");
+  const viteItems = jQuery(".js-item-onscroll");
   initViewportClass(viteItems);
 }
 
