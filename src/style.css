@@ -819,6 +819,12 @@ html {
   &.category-right {
     .category-promo-content {
         order: 2;
+
+         @media (width <= 680px) {
+            & {
+                order: 0;
+            }
+         }
     }
   }
 
