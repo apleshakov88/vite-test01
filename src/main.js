@@ -5,13 +5,26 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 window.jQuery = window.$ = jQuery;
 
+initBodyTouchClass();
 document.addEventListener("DOMContentLoaded", () => {
   initGlitchAnimation();
   initPageLoadedClass();
   initClassOnScroll();
   initSwiper();
-//   initSkrollr();
+  initSkrollr();
 });
+
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
+
+function initBodyTouchClass() { 
+    document.documentElement.classList.add(isTouchDevice() ? 'js-touch-device' : 'js-desktop-device');
+}
 
 function initSwiper() {
   const swiper = new Swiper(".swiper-js", {
@@ -64,6 +77,8 @@ function initPageLoadedClass() {
 }
 
 function initSkrollr() {
+  if (isTouchDevice()) return;
+
   skrollr.init({
     forceHeight: false,
   });
