@@ -33,6 +33,7 @@ canvas {
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 input,
@@ -71,12 +72,32 @@ html {
   font-family: FontAwesome;
 }
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font:
+    400 14px/1.3 "Bebas Neue",
+    Arial,
+    serif;
+  background: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
 :root {
   --black: #0c0c0a;
   --white: #fff;
   --indent-small: 10px;
   --indent-medium: 20px;
   --indent-big: 40px;
+
+  --screen-small: 480px;
+  --screen-medium: 768px;
+  --screen-big: 1024px;
 }
 
 .wrapper {
@@ -84,14 +105,12 @@ html {
   flex-direction: column;
   min-height: 100%;
   width: 100%;
-  background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
 }
 
 .page-soon {
   display: flex;
   background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
   background-size: cover;
-  color: var(--white);
 
   .soon {
     width: 100%;
@@ -352,28 +371,21 @@ html {
       transition-delay: 0s;
     }
 
-    .vite-item__holder:after {
+    & > .vite-item__holder:after {
       bottom: var(--indent-medium);
       transition-delay: var(--outline-duration);
     }
 
-    .vite-item__holder:before {
+    & > .vite-item__holder:before {
       left: var(--indent-medium);
       transition-delay: 0s;
     }
   }
-
-  .vite-item__content-cover {
-    position: absolute;
-  }
 }
 
 .visual {
-  margin-bottom: var(--indent-big);
-
-  .visual-content {
-  }
-  .visual__image {
+  img {
+    width: 100%;
   }
 
   .vite-item__content-cover {
@@ -386,12 +398,16 @@ html {
     z-index: 2;
     align-items: center;
     padding: var(--indent-big);
-    color: var(--white);
   }
 
   .vite-item__title {
-    text-transform: uppercase;
-    font-size: 40px;
+    font-size: 70px;
+    line-height: 80px;
+
+    @media (width <= 768px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 }
 
@@ -496,6 +512,8 @@ html {
 
   .text {
     white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
   }
 
   .typed-text {
@@ -774,20 +792,33 @@ html {
 }
 
 #main {
-  padding: calc(60px + var(--indent-big)) var(--indent-big) var(--indent-big);
+  padding: calc(20px + var(--indent-big)) 0 0;
 }
 
 #footer {
-  padding: var(--indent-medium) var(--indent-big);
   background: var(--black);
   display: flex;
   align-items: center;
   color: var(--white);
+  padding: var(--indent-medium) 0 0;
+
+  @media (width <= 680px) {
+    & {
+      flex-direction: column;
+    }
+  }
 
   .footer-top {
     order: 1;
     margin-left: auto;
     display: flex;
+    padding: 0 var(--indent-medium) var(--indent-medium);
+
+    @media (width <= 680px) {
+      & {
+        margin-left: 0;
+      }
+    }
   }
 
   .social-media {
@@ -805,36 +836,56 @@ html {
     }
   }
   .footer-bottom {
+    padding: 0 var(--indent-medium) var(--indent-medium);
     order: 0;
+    @media (width <= 680px) {
+      & {
+        order: 1;
+      }
+    }
   }
 }
 
+.category-promo-container {
+  margin: 0 0 var(--indent-medium);
+  background: var(--black) url(public/images/bg-concrete.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
 .category-promo {
   display: flex;
   width: 100%;
   color: var(--white);
   font-size: 18px;
-  margin: 0 0 var(--indent-big);
+  padding: var(--indent-big);
+
+  .category-promo-slider .vite-item {
+    --outline-width: 2px;
+  }
 
   &.category-right {
     .category-promo-content {
-        order: 2;
+      order: 2;
 
-         @media (width <= 680px) {
-            & {
-                order: 0;
-            }
-         }
+      @media (width <= 680px) {
+        & {
+          order: 0;
+        }
+      }
     }
   }
 
   .category-promo-content {
     width: 30%;
-    padding: var(--indent-medium);
+    padding: 0 var(--indent-medium);
 
     .title {
-        font-size: 30px;
-        padding: 0 0 var(--indent-medium)
+      font-size: 70px;
+      line-height: 80px;
+
+      @media (width <= 768px) {
+        font-size: 40px;
+        line-height: 48px;
+      }
     }
   }
   .category-promo-slider {
@@ -847,6 +898,7 @@ html {
     }
     .category-promo-content {
       width: 100%;
+      padding: var(--indent-medium) 0;
     }
     .category-promo-slider {
       width: 100%;
@@ -857,6 +909,7 @@ html {
 div.swiper {
   --swiper-scrollbar-drag-bg-color: var(--white);
   --swiper-navigation-color: var(--white);
+  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.5);
 
   color: var(--white);
   padding: 0 0 var(--indent-medium);
