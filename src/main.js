@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initPageLoadedClass();
   initClassOnScroll();
   initSwiper();
-  initSkrollr();
+//   initSkrollr();
 });
 
 function initSwiper() {
