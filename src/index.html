@@ -26,13 +26,22 @@
                     </li>
                     <li class="item-collection">
                         <a class="visual_link" href="#">collections</a>
+                        <div class="collection-menu">
+                            <ul role="list">
+                                <li><a class="visual_link" href="index.html#collection01">Collection #01</a></li>
+                                <li><a class="visual_link" href="index.html#collection02">Collection #02</a></li>
+                                <li><a class="visual_link" href="index.html#collection03">Collection #03</a></li>
+                                <li><a class="visual_link" href="index.html#collection04">Collection #04</a></li>
+                                <li><a class="visual_link" href="index.html#collection05">Collection #05</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-                <button class="main-menu-opener" type="button">menu opener</button>
             </nav>
+            <div class="collection-menu-overlay"></div>
         </header>
         <main id="main">
-            <section class="visual">
+            <section class="visual" id="collection01">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
                         <div class="visual-content">
@@ -53,31 +62,33 @@
                 </div>
             </section>
 
-            <section class="visual" id="visual-02">
-                <div class="vite-item js-item-onscroll">
-                    <div class="vite-item__holder">
-                        <div class="visual-content">
-                            <div class="visual__image">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="public/images/img-02-mobile.jpg" />
-                                    <source media="(min-width: 769px)" srcset="public/images/img-02.jpg" />
-                                    <img src="public/images/img-02.jpg" alt="Image 02" />
-                                </picture>
-                            </div>
-                            <div class="vite-item__content-cover">
-                                <h2 class="vite-item__title" data-anchor-target="#visual-02"
-                                    data-bottom-top="opacity: 0; transform: translateY(100px)"
-                                    data-center="opacity: 1; transform: translateY(0px)"
-                                    data-top-bottom="opacity: 0; transform: translateY(-100px)">
-                                    <a href="#" class="visual_link">SOME VITE TEXT</a>
-                                </h2>
+            <div id="collection02">
+                <section class="visual" id="visual-02">
+                    <div class="vite-item js-item-onscroll">
+                        <div class="vite-item__holder">
+                            <div class="visual-content">
+                                <div class="visual__image">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="public/images/img-02-mobile.jpg" />
+                                        <source media="(min-width: 769px)" srcset="public/images/img-02.jpg" />
+                                        <img src="public/images/img-02.jpg" alt="Image 02" />
+                                    </picture>
+                                </div>
+                                <div class="vite-item__content-cover">
+                                    <h2 class="vite-item__title" data-anchor-target="#visual-02"
+                                        data-bottom-top="opacity: 0; transform: translateY(100px)"
+                                        data-center="opacity: 1; transform: translateY(0px)"
+                                        data-top-bottom="opacity: 0; transform: translateY(-100px)">
+                                        <a href="#" class="visual_link">SOME VITE TEXT</a>
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
-            <div class="category-promo-container">
+            <div class="category-promo-container" id="collection03">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
                         <section class="category-promo category-left">
@@ -226,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="category-promo-container">
+            <div class="category-promo-container" id="collection04">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
                         <section class="category-promo category-right">
@@ -376,7 +387,7 @@
                 </div>
             </div>
 
-            <section class="visual">
+            <section class="visual" id="collection05">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
                         <div class="visual-content">

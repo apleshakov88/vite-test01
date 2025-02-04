@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="page-product">
+    <div class="wrapper" id="skrollr-body">
+        <header id="header">
+            <h1 class="logo"><a href="#"><span>VITE</span></a></h1>
+            <nav class="main-menu">
+                <ul role="list">
+                    <li>
+                        <a class="visual_link" href="#"><i class="fa fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a class="visual_link" href=""><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="item-collection">
+                        <a class="visual_link" href="#">collections</a>
+                        <div class="collection-menu">
+                            <ul role="list">
+                                <li><a class="visual_link" href="index.html#collection01">Collection #01</a></li>
+                                <li><a class="visual_link" href="index.html#collection02">Collection #02</a></li>
+                                <li><a class="visual_link" href="index.html#collection03">Collection #03</a></li>
+                                <li><a class="visual_link" href="index.html#collection04">Collection #04</a></li>
+                                <li><a class="visual_link" href="index.html#collection05">Collection #05</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="collection-menu-overlay"></div>
+        </header>
+        <main id="main">
+            <div class="product-item">
+                <div class="product-visual">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="./public/images/product-01-front.jpg" data-fancybox="gallery">
+                                    <img src="./public/images/product-01-front.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./public/images/product-01-back.jpg" data-fancybox="gallery">
+                                    <img src="./public/images/product-01-back.jpg" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="product-data">
+                    <form action="#" class="product-form">
+                        <h1 class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                        <div class="product-price">
+                            <span>120.00 LV</span>
+                        </div>
+                        <div class="product-data-item">
+                            <div class="product-tabs js-tabs">
+                                <ul class="tabset" role="list">
+                                    <li><a class="visual_link" href="#tab-size-guide">Size Guide</a>
+                                    </li>
+                                    <li><a class="visual_link" href="#tab-about">About</a></li>
+                                </ul>
+                                <div class="tab-container">
+                                    <div id="tab-about" class="tab-item">
+                                        <p>100% Cotton. 180Gsm</p>
+                                    </div>
+                                    <div id="tab-size-guide" class="tab-item">
+                                        <div class="size-heading">
+                                            <p>Size Chart</p>
+                                            <span>CM</span>
+                                        </div>
+                                        <table class="size-table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>SIZE</th>
+                                                    <th>CHEST</th>
+                                                    <th>LENGTH</th>
+                                                    <th>SHOULDERS</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>XS</th>
+                                                    <td>40</td>
+                                                    <td>25.5</td>
+                                                    <td>4.9</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>S</th>
+                                                    <td>42</td>
+                                                    <td>26</td>
+                                                    <td>5.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>M</th>
+                                                    <td>44</td>
+                                                    <td>27</td>
+                                                    <td>5.7</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>L</th>
+                                                    <td>46</td>
+                                                    <td>28</td>
+                                                    <td>6.2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>XL</th>
+                                                    <td>48</td>
+                                                    <td>29</td>
+                                                    <td>6.7</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-data-item">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, fuga necessitatibus
+                                    deleniti ipsum modi unde delectus</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam cum
+                                    possimus commodi vel! Explicabo nesciunt quidem vel porro distinctio ab ducimus
+                                    iusto, odit quis quod eligendi, et nam suscipit?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="product-data-item">
+                            <div class="product-size">
+                                <span class="title">Select your size</span>
+                                <ul role="list">
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="xs" name="product-size" id="product-size-xs"
+                                                required>
+                                            <span>xs</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="s" name="product-size" id="product-size-s"
+                                                required>
+                                            <span>s</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="m" name="product-size" id="product-size-m"
+                                                required>
+                                            <span>m</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="l" name="product-size" id="product-size-l"
+                                                required>
+                                            <span>l</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="xl" name="product-size" id="product-size-xl"
+                                                required>
+                                            <span>xl</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-data-item">
+                            <div class="product-color">
+                                <span class="title">Select colour</span>
+                                <ul role="list">
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="xs" name="product-color"
+                                                id="product-colour-white" required>
+                                            <span class="visual_link" style="background-color: #fff;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="s" name="product-color" id="product-colour-balck"
+                                                required>
+                                            <span class="visual_link" style="background-color: #000;"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button class="button" type="submit">
+                            Add to cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="category-promo-container you-may-like-container">
+                <div class="category-promo-header">
+                    <h3 class="title">You may also like</h3>
+                </div>
+                <div class="vite-item js-item-onscroll">
+                    <div class="vite-item__holder">
+                        <section class="category-promo">
+                            <div class="category-promo-slider">
+                                <div class="swiper swiper-you-may-like-js">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide vite-item">
+                                            <div class="vite-item__holder">
+                                                <a class="swiper-link" href="#">
+                                                    <img src="./public/images/img-04.jpg" alt="#">
+                                                    <div class="swiper-link-text">
+                                                        <span class="title">Lorem ipsum dolor</span>
+                                                        <div class="price">
+                                                            <span class="new-price">22.50LV</span>
+                                                            <span class="old-price">45.00LV</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <ul role="list">
+                        <li><a class="visual_link" href="#">about</a></li>
+                        <li><a class="visual_link" href="#">contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a class="visual_link" target="_blank" href="https://www.instagram.com/boldtype.conceptstore/"><i
+                            class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyrigt">Copyright © 1993 - 2025 Boldtype®. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
