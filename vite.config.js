@@ -10,6 +10,17 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: sync("./src/**/*.html".replace(/\\/g, "/")),
+      output: {
+        assetFileNames: ({ name }) => {
+          if (/\.(gif|jpe?g|png|svg)$/.test(name ?? "")) {
+            return "assets/images/[name][extname]";
+          }
+
+          // default value
+          // ref: https://rollupjs.org/guide/en/#outputassetfilenames
+          return "assets/[name]-[hash][extname]";
+        },
+      },
     },
   },
 });
