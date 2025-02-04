@@ -1140,10 +1140,12 @@ div.swiper {
       width: 100%;
       background-color: var(--white);
       padding: 5px;
-      border: 0;
-      font-size: 18px;
       cursor: pointer;
       border: 1px solid var(--white);
+      color: var(--black);
+      font-size: 18px;
+      line-height: 24px;
+      height: 34px;
       transition:
         background-color 0.4s,
         color 0.4s;
