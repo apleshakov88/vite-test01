@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-CUO80aM3.js"></script>
-  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/main-DViOGIby.css">
+  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-PRje3j1x.js"></script>
+  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/main-D6WavXvs.css">
 </head>
 
 <body class="page-home">
@@ -42,29 +42,33 @@
             <div class="collection-menu-overlay"></div>
         </header>
         <main id="main">
-            <section class="visual" id="collection01">
-                <div class="vite-item js-item-onscroll">
-                    <div class="vite-item__holder">
-                        <div class="visual-content">
-                            <div class="visual__image">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01-mobile.jpg" />
-                                    <source media="(min-width: 769px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" />
-                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" alt="Image 01" />
-                                </picture>
-                            </div>
-                            <div class="vite-item__content-cover">
-                                <h2 class="vite-item__title">
-                                    <a href="#" class="visual_link">SOME VITE TEXT</a>
-                                </h2>
+            <div id="collection01">
+                <section class="visual">
+                    <div class="vite-item js-item-onscroll">
+                        <div class="vite-item__holder">
+                            <div class="visual-content">
+                                <div class="visual__image">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01-mobile.jpg" />
+                                        <source media="(min-width: 769px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" />
+                                        <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" alt="Image 01" />
+                                    </picture>
+                                </div>
+                                <div class="visual__content-cover">
+                                    <h2 class="visual__title">
+                                        <a href="#" class="visual_link">SOME VITE TEXT</a>
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+
+
 
             <div id="collection02">
-                <section class="visual" id="visual-02">
+                <section class="visual">
                     <div class="vite-item js-item-onscroll">
                         <div class="vite-item__holder">
                             <div class="visual-content">
@@ -75,8 +79,8 @@
                                         <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-02.jpg" alt="Image 02" />
                                     </picture>
                                 </div>
-                                <div class="vite-item__content-cover">
-                                    <h2 class="vite-item__title" data-anchor-target="#visual-02"
+                                <div class="visual__content-cover">
+                                    <h2 class="visual__title" data-anchor-target="#collection02"
                                         data-bottom-top="opacity: 0; transform: translateY(100px)"
                                         data-center="opacity: 1; transform: translateY(0px)"
                                         data-top-bottom="opacity: 0; transform: translateY(-100px)">
@@ -89,147 +93,125 @@
                 </section>
             </div>
 
-            <div class="category-promo-container" id="collection03">
+
+
+
+            <div class="category-section__container" id="collection04">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
-                        <section class="category-promo category-left">
-                            <div class="category-promo-content">
-                                <h3 class="title">Title</h3>
+                        <section class="category-section">
+                            <div class="category-section__content">
+                                <h3 class="category-section__title">Title</h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet libero corrupti ipsam
                                     error ipsum voluptas voluptate quis explicabo magni iste illum voluptatem qui minima
                                 </p>
                             </div>
-                            <div class="category-promo-slider">
+                            <div class="category-section__slider">
                                 <div class="swiper swiper-js">
-                                    <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- If we need navigation buttons -->
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
-
-                                    <!-- If we need scrollbar -->
                                     <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>
@@ -238,176 +220,302 @@
                 </div>
             </div>
 
-            <div class="category-promo-container" id="collection04">
-                <div class="vite-item js-item-onscroll">
-                    <div class="vite-item__holder">
-                        <section class="category-promo category-right">
-                            <div class="category-promo-content">
-                                <h3 class="title">Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, explicabo ex
-                                    quidem
-                                    corrup?
-                                </p>
-                            </div>
-                            <div class="category-promo-slider">
-                                <div class="swiper swiper-js">
-                                    <!-- Additional required wrapper -->
-                                    <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
-                                                    <span class="swiper-link-text">Lorem ipsum dolor</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-
-                                    <!-- If we need scrollbar -->
-                                    <div class="swiper-scrollbar"></div>
+            <div id="collection07">
+                <section class="visual">
+                    <div class="vite-item js-item-onscroll">
+                        <div class="vite-item__holder">
+                            <div class="visual-content">
+                                <div class="visual__image">
+                                    <video width="640" height="360" muted loop>
+                                        <source type="video/mp4" src="https://apleshakov88.github.io/vite-test01/dist/assets/videoplayback-vs-6KSSgelB.mp4">
+                                    </video>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-
-            <section class="visual" id="collection05">
-                <div class="vite-item js-item-onscroll">
-                    <div class="vite-item__holder">
-                        <div class="visual-content">
-                            <div class="visual__image">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06-mobile.jpg" />
-                                    <source media="(min-width: 769px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06.jpg" />
-                                    <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06.jpg" alt="Image 06" />
-                                </picture>
-                            </div>
-                            <div class="vite-item__content-cover">
-                                <h2 class="vite-item__title">
-                                    <a href="#" class="visual_link">SOME VITE TEXT</a>
-                                </h2>
+                                <div class="visual__content-cover">
+                                    <h2 class="visual__title">
+                                        <a href="#" class="visual_link">SOME VITE TEXT</a>
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+            </div>
+
+
+
+
+
+
+            <div class="category-section__container" id="collection05">
+                <div class="vite-item js-item-onscroll">
+                    <div class="vite-item__holder">
+                        <section class="category-section category-section--right">
+                            <div class="category-section__content">
+                                <h3 class="category-section__title">Title</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet libero corrupti ipsam
+                                    error ipsum voluptas voluptate quis explicabo magni iste illum voluptatem qui minima
+                                </p>
+                            </div>
+                            <div class="category-section__slider">
+                                <div class="swiper swiper-js">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </section>
+            </div>
+
+
+            <div id="collection03">
+                <section class="visual">
+                    <div class="vite-item js-item-onscroll">
+                        <div class="vite-item__holder">
+                            <div class="visual-content">
+                                <div class="visual__image">
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06-mobile.jpg" />
+                                        <source media="(min-width: 769px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06.jpg" />
+                                        <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-06.jpg" alt="Image 06" />
+                                    </picture>
+                                </div>
+                                <div class="visual__content-cover">
+                                    <h2 class="visual__title">
+                                        <a href="#" class="visual_link">SOME VITE TEXT</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="category-section__container" id="collection06">
+                <div class="vite-item js-item-onscroll">
+                    <div class="vite-item__holder">
+                        <section class="category-section category-section--center">
+                            <div class="category-section__content">
+                                <h3 class="category-section__title">Title</h3>
+                            </div>
+                            <div class="category-section__slider">
+                                <div class="swiper swiper-js">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image"
+                                                            src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer id="footer">
             <div class="footer-top">
@@ -418,14 +526,25 @@
                     </ul>
                 </nav>
                 <div class="social-media">
-                    <a class="visual_link" target="_blank" href="https://www.instagram.com/boldtype.conceptstore/"><i
-                            class="fa fa-instagram"></i></a>
+                    <a class="visual_link" target="_blank" href="#"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyrigt">Copyright © 1993 - 2025 Boldtype®. All rights reserved.</p>
             </div>
         </footer>
+    </div>
+    <div class="loader">
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 87.3499984741211 35" data-asc="0.9">
+                <g fill="#fff">
+                    <g fill="#fff" transform="translate(0, 0)">
+                        <path
+                            d="M0 10L5.55 10L9.15 37.15L9.25 37.15L12.85 10L17.90 10L12.60 45L5.30 45L0 10ZM28.55 10L34.05 10L34.05 45L28.55 45L28.55 10ZM50.45 15L44.70 15L44.70 10L61.70 10L61.70 15L55.95 15L55.95 45L50.45 45L50.45 15ZM72.35 10L87.35 10L87.35 15L77.85 15L77.85 24.25L85.40 24.25L85.40 29.25L77.85 29.25L77.85 40L87.35 40L87.35 45L72.35 45L72.35 10Z" />
+                    </g>
+                </g>
+            </svg>
+        </h1>
     </div>
 </body>
 
