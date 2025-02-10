@@ -7,19 +7,77 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 window.jQuery = window.$ = jQuery;
 
-initBodyTouchClass();
-document.addEventListener("DOMContentLoaded", () => {
-  initGlitchAnimation();
-  initPageLoadedClass();
-  initClassOnScroll();
-  initSwiper();
-  initProductTabs();
-  initProductSwiper();
-  initYouMayLikeSwiper();
-  initProductFancybox();
-  initMenu();
-  initSkrollr();
-});
+initCommon();
+initComingSoon();
+initHomePage();
+initProductPage();
+
+function initCommon() {
+  initBodyTouchClass();
+
+  jQuery(function () {
+    initPageLoadedClass();
+    initClassOnScroll();
+    initMenu();
+  });
+}
+
+function initHomePage() {
+  jQuery(function () {
+    initSkrollr();
+    initSwiper();
+    initVideoOnScroll();
+  });
+}
+
+function initVideoOnScroll() {
+  const observer = new IntersectionObserver(function (entries) {
+    const target = entries[0].target;
+    if (!entries[0].isIntersecting) {
+        target && target.pause && target.pause();
+    } else {
+      target && target.play && target.play();
+    }
+  });
+
+  jQuery(".visual video").each(function () {
+    observer.observe(this);
+  });
+
+  // const items$ = ;
+  // const win = jQuery(window);
+
+  // function handleVisibility(items) {
+  //   const wBottom = win.scrollTop() + win.innerHeight();
+
+  //   items.each(function () {
+  //     const item = jQuery(this);
+  //     if (item.offset().top + 50 < wBottom) {
+  //       item.addClass(settings.className);
+  //     } else {
+  //       item.removeClass(settings.className);
+  //     }
+  //   });
+  // }
+
+  // handleVisibility(items$);
+  // win.on("scroll resize", () => handleVisibility(items$));
+}
+
+function initProductPage() {
+  jQuery(function () {
+    initProductTabs();
+    initProductSwiper();
+    initYouMayLikeSwiper();
+    initProductFancybox();
+  });
+}
+
+function initComingSoon() {
+  jQuery(function () {
+    initGlitchAnimation();
+  });
+}
 
 function isTouchDevice() {
   return (
@@ -36,11 +94,12 @@ function initBodyTouchClass() {
 }
 
 function initSwiper() {
-  const swiper = new Swiper(".swiper-js", {
+  const swiper = new Swiper(".category-section__container .swiper-js", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpointsBase: "container",
     scrollbar: {
       el: ".swiper-scrollbar",
       draggable: true,
@@ -63,7 +122,7 @@ function initSwiper() {
         spaceBetween: 20,
       },
       800: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
@@ -121,7 +180,7 @@ function initViewportClass(items, options) {
   }
 
   handleVisibility(items$);
-  win.on("scroll resize", () => handleVisibility(items$));
+  win.on("scroll resize orientationchange", () => handleVisibility(items$));
 }
 
 function initProductTabs() {
@@ -240,7 +299,7 @@ function initMenu() {
     });
 
     anchorLinks.on("click", (e) => {
-        hideMenu();
+      hideMenu();
     });
 
     container.on("click", (e) => {

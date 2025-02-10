@@ -1,0 +1,78 @@
+==== TODO ====
+2. Product page replace product-items
+2. Split css per pages
+
+
+
+
+==== GENERAL ====
+- show COMING SOON for users, but not for Admin
+- custom body class per page - body(manually in html CODE is OK)
+- common JS+CSS, custom CSS + JS per page
+
+
+
+==== HEADER ====
+- logo
+- menu
+- openclose with categories, not all. Should be editable, manually in HTML is OK.
+
+
+
+==== FOOTER ====
+- common footer for all pages
+- menu
+
+
+
+==== HOME PAGE ====
+- show category sections - custom class + left, right, center
+-- custom class category-section(manually in html CODE is OK)
+-- editable html, to add Skrollr config
+-- product item standart layout. Configurable items order
+-- product item short title
+-- product item custom class
+
+- visual section - some promo(coming soon) or link to some promo product, custom class, image + description
+-- responsive images. Editable in HTML is OK.
+-- video + image for mobile
+
+
+
+==== PRODUCT PAGE ====
+- product
+-- color selection is not important, very probably will post as a separate product
+-- fancybox with big size images
+-- count per size without page reload?
+- SimilarProducts
+-- products item from current category or maybe we can manage manually?
+
+
+
+==== ABOUT US ====
+TODO: Some standard page? Text + images, maybe JS for class on scrooll
+
+
+
+==== CONTACT US ====
+Contact form? Phone number? IG-link?
+
+==== CART ====
+DISCOUNT?
+Something default, but I'll add styles later
+
+
+
+==== SHIPPING ====
+????
+TODO: Check what BG sites use. To add EKONT and SPEEDY or custom address
+
+
+
+
+==== PAYMENT ====
+-- revolut link?
+-- revolut API?
+-- some plugin with google + apple pay + pay by cart
+
+
