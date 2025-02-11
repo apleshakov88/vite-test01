@@ -1,10 +1,3 @@
-==== TODO ====
-2. Product page replace product-items
-2. Split css per pages
-
-
-
-
 ==== GENERAL ====
 - show COMING SOON for users, but not for Admin
 - custom body class per page - body(manually in html CODE is OK)
@@ -29,13 +22,13 @@
 - show category sections - custom class + left, right, center
 -- custom class category-section(manually in html CODE is OK)
 -- editable html, to add Skrollr config
--- product item standart layout. Configurable items order
--- product item short title
+-- product item standard layout. Configurable items order
+-- product item short title?
 -- product item custom class
 
 - visual section - some promo(coming soon) or link to some promo product, custom class, image + description
 -- responsive images. Editable in HTML is OK.
--- video + image for mobile
+-- video + image for mobile or mobile video. OK if I can edit as HTML in manual mode.
 
 
 
@@ -43,19 +36,22 @@
 - product
 -- color selection is not important, very probably will post as a separate product
 -- fancybox with big size images
--- count per size without page reload?
+-- quantity in stock? - not important at this point
+-- quantity per size without page reload?
 - SimilarProducts
 -- products item from current category or maybe we can manage manually?
 
 
 
 ==== ABOUT US ====
-TODO: Some standard page? Text + images, maybe JS for class on scrooll
+images, videos, h1-h2, p
 
 
 
 ==== CONTACT US ====
 Contact form? Phone number? IG-link?
+
+
 
 ==== CART ====
 DISCOUNT?

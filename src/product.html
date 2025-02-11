@@ -13,7 +13,7 @@
 </head>
 
 <body class="page-product">
-    <div class="wrapper" id="skrollr-body">
+    <div class="wrapper">
         <header id="header">
             <h1 class="logo"><a href="index.html"><span>VITE</span></a></h1>
             <nav class="main-menu">
@@ -44,9 +44,7 @@
             <div class="product-block">
                 <div class="product-visual">
                     <div class="swiper">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
                                 <a href="https://apleshakov88.github.io/vite-test01/dist/assets/images/product-01-front.jpg"
                                     data-fancybox="gallery">
@@ -60,11 +58,8 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
@@ -216,108 +211,113 @@
                     </form>
                 </div>
             </div>
-            <div class="category-promo-container you-may-like-container">
-                <div class="category-promo-header">
-                    <h3 class="title">You may also like</h3>
-                </div>
+            <div class="category-section__container you-may-like-container">
                 <div class="vite-item js-item-onscroll">
                     <div class="vite-item__holder">
-                        <section class="category-promo">
-                            <div class="category-promo-slider">
-                                <div class="swiper swiper-you-may-like-js">
-                                    <!-- Additional required wrapper -->
+                        <section class="category-section category-section--center">
+                            <div class="category-section__content">
+                                <h3 class="category-section__title">You may also like</h3>
+                            </div>
+                            <div class="category-section__slider">
+                                <div class="swiper swiper-js">
                                     <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-03.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-04.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-slide vite-item">
-                                            <div class="vite-item__holder">
-                                                <a class="swiper-link" href="product.html">
-                                                    <img src="./public/images/img-04.jpg" alt="#">
-                                                    <div class="swiper-link-text">
-                                                        <span class="title">Lorem ipsum dolor</span>
-                                                        <div class="price">
-                                                            <span class="new-price">22.50LV</span>
-                                                            <span class="old-price">45.00LV</span>
+                                        <div class="swiper-slide">
+                                            <div class="product-item">
+                                                <div class="product-item__holder">
+                                                    <a class="product-item__link" href="product.html">
+                                                        <img class="product-item__image" src="./public/images/img-05.jpg" alt="#">
+                                                        <div class="product-item__text">
+                                                            <span class="title">Lorem ipsum dolor</span>
+                                                            <div class="price">
+                                                                <span class="new-price">22.50LV</span>
+                                                                <span class="old-price">45.00LV</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- If we need navigation buttons -->
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
-
-                                    <!-- If we need scrollbar -->
                                     <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>

@@ -11,6 +11,7 @@ initCommon();
 initComingSoon();
 initHomePage();
 initProductPage();
+initAboutPage();
 
 function initCommon() {
   initBodyTouchClass();
@@ -30,45 +31,10 @@ function initHomePage() {
   });
 }
 
-function initVideoOnScroll() {
-  const observer = new IntersectionObserver(function (entries) {
-    const target = entries[0].target;
-    if (!entries[0].isIntersecting) {
-        target && target.pause && target.pause();
-    } else {
-      target && target.play && target.play();
-    }
-  });
-
-  jQuery(".visual video").each(function () {
-    observer.observe(this);
-  });
-
-  // const items$ = ;
-  // const win = jQuery(window);
-
-  // function handleVisibility(items) {
-  //   const wBottom = win.scrollTop() + win.innerHeight();
-
-  //   items.each(function () {
-  //     const item = jQuery(this);
-  //     if (item.offset().top + 50 < wBottom) {
-  //       item.addClass(settings.className);
-  //     } else {
-  //       item.removeClass(settings.className);
-  //     }
-  //   });
-  // }
-
-  // handleVisibility(items$);
-  // win.on("scroll resize", () => handleVisibility(items$));
-}
-
 function initProductPage() {
   jQuery(function () {
     initProductTabs();
     initProductSwiper();
-    initYouMayLikeSwiper();
     initProductFancybox();
   });
 }
@@ -76,6 +42,42 @@ function initProductPage() {
 function initComingSoon() {
   jQuery(function () {
     initGlitchAnimation();
+  });
+}
+
+function initAboutPage() {
+  jQuery(function () {
+    initAboutVideoOnScroll();
+  });
+}
+
+function initAboutVideoOnScroll() {
+  const observer = new IntersectionObserver(function (entries) {
+    const target = entries[0].target;
+    if (!entries[0].isIntersecting) {
+      target && target.pause && target.pause();
+    } else {
+      target && target.play && target.play();
+    }
+  });
+
+  jQuery(".about-section video").each(function () {
+    observer.observe(this);
+  });
+}
+
+function initVideoOnScroll() {
+  const observer = new IntersectionObserver(function (entries) {
+    const target = entries[0].target;
+    if (!entries[0].isIntersecting) {
+      target && target.pause && target.pause();
+    } else {
+      target && target.play && target.play();
+    }
+  });
+
+  jQuery(".visual video").each(function () {
+    observer.observe(this);
   });
 }
 
@@ -240,42 +242,6 @@ function initProductSwiper() {
       swiperInstance = null;
     }
   }
-}
-
-function initYouMayLikeSwiper() {
-  const swiper = new Swiper(".swiper-you-may-like-js", {
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-      draggable: true,
-    },
-    slidesPerView: "auto",
-    slidesPerView: 1,
-    spaceBetween: 0,
-    watchSlidesProgress: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-      },
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1000: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-  });
 }
 
 function initProductFancybox() {
