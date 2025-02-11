@@ -1042,30 +1042,44 @@ body {
 
 /* START ABOUT PAGE */
 .page-about {
-    .about-section {
-        font-size: 20px;
-        padding: 0 var(--indent-medium) var(--indent-big);
-    }
+  .about-section {
+    font-size: 20px;
+    padding: 0 var(--indent-medium) var(--indent-big);
+  }
 
-    .about-visual {
-        margin: 0 0 var(--indent-medium);
+  .about-visual {
+    margin: 0 0 var(--indent-medium);
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0 0 var(--indent-medium);
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 var(--indent-medium);
+  }
+
+  p {
+    margin: 0 0 var(--indent-small);
+  }
+
+  @media (width <= 680px) {
+    .about-section {
+      font-size: 16px;
     }
 
     h1 {
-        font-size: 40px;
-        font-weight: normal;
-        margin: 0 0 var(--indent-medium);
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 30px;
-        font-weight: normal;
-        margin: 0 0 var(--indent-medium);
+        font-size: 24px;
     }
-
-    p {
-        margin: 0 0 var(--indent-small);
-    }
+  }
 }
 
 /* END ABOUT PAGE */
