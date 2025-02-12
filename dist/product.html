@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-Cq-kvLx0.js"></script>
-  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/main-BKAOXvjW.css">
+  <script type="module" crossorigin src="https://apleshakov88.github.io/vite-test01/dist/assets/main-lE4vOg61.js"></script>
+  <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/main-DMWKYvem.css">
 </head>
 
 <body class="page-product">
@@ -42,7 +42,8 @@
             <div class="collection-menu-overlay"></div>
         </header>
         <main id="main">
-            <div class="product-block">
+            <!-- .product-block--out-of-stock or .disabled to disable item -->
+            <div class="product-block product-block--out-of-stock">
                 <div class="product-visual">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -69,6 +70,9 @@
                         <h1 class="product-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                         <div class="product-price">
                             <span>120.00 LV</span>
+                        </div>
+                        <div class="product-data-item product-data-item--status">
+                            <p>Item is not available</p>
                         </div>
                         <div class="product-data-item">
                             <div class="product-tabs js-tabs">
@@ -155,7 +159,7 @@
                                     <li>
                                         <label>
                                             <input type="radio" value="s" name="product-size" id="product-size-s"
-                                                required>
+                                                required disabled>
                                             <span>s</span>
                                         </label>
                                     </li>
@@ -190,16 +194,22 @@
                                 <ul role="list">
                                     <li>
                                         <label>
-                                            <input type="radio" value="xs" name="product-color"
+                                            <input type="radio" value="white" name="product-color"
                                                 id="product-colour-white" required>
                                             <span class="visual_link" style="background-color: #fff;"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="radio" value="s" name="product-color" id="product-colour-balck"
+                                            <input type="radio" value="black" name="product-color" id="product-colour-black"
                                                 required>
                                             <span class="visual_link" style="background-color: #000;"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" value="red" name="product-color" id="product-colour-pink" required disabled>
+                                            <span class="visual_link" style="background-color: red;"></span>
                                         </label>
                                     </li>
                                 </ul>

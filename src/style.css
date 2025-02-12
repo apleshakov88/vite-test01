@@ -389,7 +389,9 @@ body {
     transition: transform 0.2s;
   }
 
-  .js-desktop-device &:hover .product-item__image {
+  .js-desktop-device
+    &:not(.product-item--out-of-stock):not(.disabled):hover
+    .product-item__image {
     transform: scale(1.2);
   }
 
@@ -411,6 +413,36 @@ body {
       color: var(--red);
       text-decoration: line-through;
     }
+  }
+
+  &.product-item--out-of-stock:after,
+  &.disabled:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--black);
+    opacity: 0.8;
+  }
+
+  &.product-item--out-of-stock:before {
+    display: block;
+    content: "Out of stock";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+    color: var(--red);
+    z-index: 1;
+    font-size: 20px;
+    border: 2px solid var(--red);
+    padding: var(--indent-small);
   }
 }
 
@@ -785,6 +817,18 @@ body {
   width: 100%;
   position: relative;
 
+  &.product-block--out-of-stock,
+  &.disabled {
+    .product-form .button {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    .product-data-item--status {
+        display: block;
+    }
+  }
+
   .product-data {
     width: 40%;
     padding: 0 var(--indent-medium);
@@ -803,6 +847,13 @@ body {
     font-weight: normal;
     padding: 0 0 var(--indent-big);
   }
+
+  .product-data-item--status {
+    color: var(--red);
+    display: none;
+    font-size: 20px;
+  }
+
   .product-data-item {
     padding: 0 0 var(--indent-medium);
   }
@@ -897,6 +948,11 @@ body {
           color: var(--black);
         }
 
+        input:disabled + span {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+
         input {
           width: 1px;
           height: 1px;
@@ -943,6 +999,15 @@ body {
 
         input:checked + span:after {
           width: 100%;
+        }
+
+        input:disabled + span {
+            opacity: 0.3;
+            pointer-events: none;
+
+            &:after {
+                display: none;
+            }
         }
 
         input {
@@ -1001,6 +1066,8 @@ body {
   }
 
   .product-visual {
+    position: relative;
+
     div.swiper {
       --swiper-scrollbar-drag-bg-color: var(--black);
       --swiper-navigation-color: var(--black);
@@ -1073,11 +1140,11 @@ body {
     }
 
     h1 {
-        font-size: 30px;
+      font-size: 30px;
     }
 
     h2 {
-        font-size: 24px;
+      font-size: 24px;
     }
   }
 }
