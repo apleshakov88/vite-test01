@@ -1,5 +1,5 @@
 ==== GENERAL ====
-- show COMING SOON for users, but not for Admin
+- show ONLY "COMING SOON" for users, but not for Admin
 - custom body class per page - body(manually in html CODE is OK)
 - common JS+CSS, custom CSS + JS per page
 
@@ -8,13 +8,12 @@
 ==== HEADER ====
 - logo
 - menu
-- openclose with categories, not all. Should be editable, manually in HTML is OK.
+- openclose with categories, not all existed. Should be editable, manually in HTML is OK.
 
 
 
 ==== FOOTER ====
 - common footer for all pages
-- menu
 
 
 
@@ -24,11 +23,12 @@
 -- editable html, to add Skrollr config
 -- product item standard layout. Configurable items order
 -- product item short title?
--- product item custom class
+-- product item custom class to customize if needed
+-- product item disabled, e.g. QTY === 0
 
 - visual section - some promo(coming soon) or link to some promo product, custom class, image + description
 -- responsive images. Editable in HTML is OK.
--- video + image for mobile or mobile video. OK if I can edit as HTML in manual mode.
+-- video + image for mobile or mobile video. OK if I can edit as HTML manually.
 
 
 
@@ -36,8 +36,10 @@
 - product
 -- color selection is not important, very probably will post as a separate product
 -- fancybox with big size images
--- quantity in stock? - not important at this point
+-- quantity in stock? - not important at this point?
 -- quantity per size without page reload?
+-- disabled state + product status.
+Let's discuss.
 - SimilarProducts
 -- products item from current category or maybe we can manage manually?
 
@@ -47,6 +49,10 @@
 images, videos, h1-h2, p
 
 
+==== LOGIN + REGISTRATION ====
+- login with google account or IG-account(Meta?) + (Regeistration by Email)
+
+
 
 ==== CONTACT US ====
 Contact form? Phone number? IG-link?
@@ -54,21 +60,25 @@ Contact form? Phone number? IG-link?
 
 
 ==== CART ====
-DISCOUNT?
+DISCOUNTs?
 Something default, but I'll add styles later
 
 
 
 ==== SHIPPING ====
-????
-TODO: Check what BG sites use. To add EKONT and SPEEDY or custom address
+Shipping Address and that's it, We'll deide by our own how to deliver it
+or
+TODO: Check what BG sites use. To add ECONT and SPEEDY or custom address
 
 
 
 
 ==== PAYMENT ====
--- revolut link?
--- revolut API?
--- some plugin with google + apple pay + pay by cart
+Gonna use REVOLUT for payments.
+Maybe we can try to generate REVOLUT link for payment?
+-- google pay  
+-- apple pay
+-- pay by cart
+-- pay after you receive?
 
 
