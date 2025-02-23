@@ -100,7 +100,7 @@ body {
   --indent-medium: 20px;
   --indent-big: 40px;
 
-  --header-height: 60px;
+  --header-height: 70px;
 }
 
 .wrapper {
@@ -153,6 +153,7 @@ body {
 }
 .logo {
   color: var(--white);
+  font-weight: normal;
 
   a {
     display: block;
@@ -613,6 +614,7 @@ body {
   }
   .title {
     position: relative;
+    font-weight: normal;
   }
 
   .heading {
@@ -620,7 +622,7 @@ body {
     border: 4px solid currentColor;
     padding: 5px 40px;
     font-size: 10vw;
-    letter-spacing: 6vw;
+    letter-spacing: 2vw;
 
     position: relative;
     background: var(--black);
@@ -652,7 +654,7 @@ body {
   }
 
   .heading span {
-    margin-right: -6vw;
+    margin-right: -2vw;
   }
 
   .text-content {
