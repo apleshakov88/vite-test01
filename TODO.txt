@@ -35,6 +35,10 @@
 34. https://www.youtube.com/watch?v=_MYn-dfjXgg&ab_channel=Bart
 
 
+
+==== TODO ====
+
+
 ==== GENERAL ====
 - show ONLY "COMING SOON" for users, but not for Admin
 - custom body class per page - body(manually in html CODE is OK)
