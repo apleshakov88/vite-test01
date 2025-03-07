@@ -37,6 +37,9 @@
 
 
 ==== TODO ====
+1. id="collection-<?php the_row_index(); ?>"> --- sub_field for ID?
+3. Show me please how I can add sub_field to block?
+2. banner button without text. Works fine only if TARGET attribute preset. Commented
 
 
 ==== GENERAL ====

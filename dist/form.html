@@ -16,7 +16,7 @@
   <link rel="stylesheet" crossorigin href="https://apleshakov88.github.io/vite-test01/dist/assets/main-Cm9JZxav.css">
 </head>
 
-<body class="page-about">
+<body class="page-form">
     <div class="wrapper">
         <header id="header">
             <h1 class="logo"><a href="index.html"><span>BOLD TYPE</span></a></h1>
@@ -45,67 +45,74 @@
             <div class="collection-menu-overlay"></div>
         </header>
         <main id="main">
-            <section class="about-container">
-                <div class="about-section">
-                    <div class="about-visual">
-                        <video width="640" height="360" muted loop playsinline>
-                            <source type="video/mp4" src="https://apleshakov88.github.io/vite-test01/dist/assets/videoplayback-vs-6KSSgelB.mp4">
-                        </video>
+            <form action="#" class="form">
+                <fieldset>
+                    <div class="form__row">
+                        <input type="text" class="form__field" placeholder="Firstname" required>
+                        <input type="text" class="form__field" placeholder="Firstname" value="Disabled Firstname"
+                            disabled>
+                        <input type="text" class="form__field" placeholder="Lastname" required>
                     </div>
-                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere, consectetur </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi quidem corrupti maiores
-                        enim
-                        sunt optio illo mollitia aliquam harum numquam est aperiam, ullam dolorem labore rerum magnam
-                        tenetur libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi quidem
-                        corrupti maiores
-                        enim
-                        sunt optio illo mollitia aliquam harum numquam est aperiam, ullam dolorem labore rerum magnam
-                        tenetur libero. orem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi quidem
-                        corrupti maiores
-                        enim
-                        sunt optio illo mollitia aliquam harum numquam est aperiam, ullam dolorem labore rerum magnam
-                        tenetur libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi quidem
-                        corrupti maiores
-                        enim
-                        sunt optio illo mollitia aliquam harum numquam est aperiam, ullam dolorem labore rerum magnam
-                        tenetur libero.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, error? Necessitatibus hic
-                        consequatur,
-                        ipsum quisquam et maiores? Nemo repudiandae, laudantium aliquam voluptas, debitis nesciunt fugit
-                        natus soluta incidunt, at rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                        perferendis, ducimus voluptatibus est nam rerum itaque aspernatur quis illum tempora dolor ex
-                        doloribus deleniti minima debitis, qui modi repellat dolorem? Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Ea id impedit at consequuntur. Rerum dicta quibusdam accusamus
-                        voluptates odit impedit natus fugiat fuga sunt maxime, qui quasi at accusantium aut!</p>
-                </div>
-                <div class="about-section">
-                    <div class="about-visual">
-                        <picture>
-                            <source media="(max-width: 768px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01-mobile.jpg" />
-                            <source media="(min-width: 769px)" srcset="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" />
-                            <img src="https://apleshakov88.github.io/vite-test01/dist/assets/images/img-01.jpg" alt="Image 01" />
-                        </picture>
+                    <div class="form__row">
+                        <input type="password" class="form__field" placeholder="Password" required>
+                        <input type="password" class="form__field" placeholder="Password" disabled>
                     </div>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique nesciunt, animi magnam
-                        labore, natus totam
-                        excepturi quisquam cumque et placeat cum iusto pariatur numquam nemo doloribus minima est
-                        recusandae.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ab temporibus libero nulla quo
-                        autem consequuntur sit
-                        blanditiis, doloribus ullam iste ut asperiores, alias, nesciunt inventore consequatur illum non
-                        id.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus tempora nam excepturi vel
-                        inventore, consequuntur veniam eligendi aliquid facere assumenda possimus perferendis sed, autem
-                        veritatis eos hic saepe sequi maxime. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Delectus beatae aspernatur, vitae minus commodi dolorum veritatis tenetur veniam repudiandae
-                        harum. Corrupti exercitationem, et minus iusto excepturi hic quas ab aliquid! Lorem ipsum, dolor
-                        sit amet consectetur adipisicing elit. Hic cumque et dignissimos, aperiam officiis quod,
-                        suscipit minus nisi magni, atque consequuntur nemo est commodi eveniet blanditiis quia ipsam
-                        adipisci voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-                        blanditiis qui, repellendus earum consequatur vel id odio magnam! Nemo aliquam veniam maiores
-                        ipsam esse amet fugiat culpa delectus enim voluptates.</p>
-                </div>
-            </section>
+                    <div class="form__row">
+                        <textarea rows="10" cols="50" class="form__field" placeholder="Message" required></textarea>
+                        <textarea rows="10" cols="50" class="form__field" placeholder="Message" disabled></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label for="form-radio01" class="form__check-field">
+                            <span class="form__check-label">Radio label 01</span>
+                            <input type="radio" name="form-radio" id="form-radio01" required>
+                        </label>
+                        <label for="form-radio02" class="form__check-field">
+                            <span class="form__check-label">Radio label 02</span>
+                            <input type="radio" name="form-radio" id="form-radio02">
+                        </label>
+                        <label for="form-radio03" class="form__check-field">
+                            <span class="form__check-label">Radio label 03</span>
+                            <input type="radio" name="form-radio" id="form-radio03">
+                        </label>
+                        <label for="form-radio04" class="form__check-field">
+                            <span class="form__check-label">Radio label 04</span>
+                            <input type="radio" name="form-radio" id="form-radio04" disabled>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label for="form-checkbox01" class="form__check-field">
+                            <span class="form__check-label">Checkbox label 01</span>
+                            <input type="checkbox" name="form-checkbox" id="form-checkbox01" required>
+                        </label>
+                        <label for="form-checkbox02" class="form__check-field">
+                            <span class="form__check-label">Checkbox label 02</span>
+                            <input type="checkbox" name="form-checkbox" id="form-checkbox02">
+                        </label>
+                        <label for="form-checkbox03" class="form__check-field">
+                            <span class="form__check-label">Checkbox label 03</span>
+                            <input type="checkbox" name="form-checkbox" id="form-checkbox03" disabled>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <select class="form__select" class="form__select" required>
+                            <option value=""  disabled selected>Select Something</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <select class="form__select" disabled>
+                            <option value="">Select Something</option>
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form__row">
+                        <button class="form__button" type="submit">Submit</button>
+                        <button class="form__button" type="submit" disabled>Submit</button>
+                    </div>
+                </fieldset>
+            </form>
         </main>
         <footer id="footer">
             <div class="footer-top">
