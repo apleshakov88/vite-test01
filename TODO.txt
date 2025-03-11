@@ -35,11 +35,20 @@
 34. https://www.youtube.com/watch?v=_MYn-dfjXgg&ab_channel=Bart
 
 
+==== ME ====
+2. User pages
+--- downloads
+--- orders
+3. Product page AJAX for cart form
+4. Added to cart message - woocomerce-message
 
-==== TODO ====
-1. id="collection-<?php the_row_index(); ?>"> --- sub_field for ID?
-3. Show me please how I can add sub_field to block?
-2. banner button without text. Works fine only if TARGET attribute preset. Commented
+--- to Simon ---
+11. Simon. Product size - table per table as textarea field
+12. Simon. ID's on homepage - add sub_field
+13. Simon. Register new user. Let's do if easy.
+14. Simon. Size table is not shown https://www.bold-type.store/product/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-7/
+15. Simon. Product page. Images in carousel stretched because strange attributes - sizes="auto, (max-width: 800px) 100vw, 800px"
+
 
 
 ==== GENERAL ====
