@@ -17,6 +17,7 @@ function initCommon() {
   initBodyTouchClass();
 
   jQuery(function () {
+    // initCartImage();
     initPageLoadedClass();
     initClassOnScroll();
     initMenu();
@@ -97,6 +98,7 @@ function initBodyTouchClass() {
 
 function initSwiper() {
   const swiper = new Swiper(".category-section__container .swiper-js", {
+    autoHeight: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -222,6 +224,7 @@ function initProductSwiper() {
   function init() {
     if (swiperInstance) return;
     swiperInstance = new Swiper(".product-visual .swiper", {
+      autoHeight: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -292,4 +295,163 @@ function initMenu() {
       isOpen ? hideMenu() : showMenu();
     }
   });
+}
+
+function initCartImage() {
+  const imagesSet = [
+    {
+      url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-cart-01.gif",
+    },
+    {
+      url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-cart-02.gif",
+    },
+    {
+      url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-cart-03.jpg",
+    },
+    {
+      url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-cart-04.gif",
+    },
+    {
+      url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-03-transparent.gif",
+    },
+  ];
+
+  jQuery(
+    ".woocommerce-cart .wp-block-woocommerce-empty-cart-block .wc-block-cart__empty-cart__title",
+  )
+    .each(function () {
+      const randomImage = imagesSet[getRandomInt(0, imagesSet.length - 1)];
+      jQuery('<div class="empty-card-image"></div>')
+        .html(`<img class="js-empty-cart-image" src="${randomImage.url}" />`)
+        .prependTo(this);
+    })
+    .addClass("js-empty-cart-inited");
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function initRandomDog() {
+  //   const imagesSet = [
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-02.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-03.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-04.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-05.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-06.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-07.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-08.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-09.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-10.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-11.gif",
+  //     },
+  //     {
+  //       url: "https://www.bold-type.store/wp-content/themes/vite/assets/images/dog-12.gif",
+  //     },
+  //   ];
+
+  const imagesSet = [
+    {
+      url: "/vite-test01/dist/public/images/img-05.jpg",
+      class: "img-01",
+      start: {
+        cssStyles: () => ({
+          left: "-100%",
+          top: getRandomInt(0, 80) + "%",
+        }),
+        animStyles: () => ({
+          left: "200px",
+        }),
+        animOptions: { duration: 300, delay: 2000 },
+      },
+      end: {
+        animStyles: () => ({
+          left: "-100%",
+          opacity: 0,
+        }),
+        animOptions: { duration: 2500 },
+      },
+    },
+    {
+      url: "/vite-test01/dist/public/images/img-05.jpg",
+      class: "img-02",
+      start: {
+        cssStyles: () => ({
+          top: "100%",
+          marginTop: "100px",
+          left: getRandomInt(0, 80) + "%",
+        }),
+        animStyles: () => ({
+          top: "100%",
+          marginTop: "-100px",
+        }),
+        animOptions: { duration: 300, delay: 5000 },
+      },
+      end: {
+        animStyles: () => ({
+          marginTop: "100px",
+          opacity: 0,
+        }),
+        animOptions: { duration: 500 },
+      },
+    },
+  ];
+
+  const dog$ = jQuery('<div class="js-random-dog"></div>')
+    .hide()
+    .appendTo(document.body);
+  const image$ = jQuery("<img />").appendTo(dog$);
+
+  let timer = startRandom();
+
+  function startRandom() {
+    const randomDelayInSec = getRandomInt(5, 10) * 1000;
+    return setTimeout(showImage, randomDelayInSec);
+  }
+
+  function stopRandom() {
+    clearTimeout(timer);
+  }
+
+  function showImage() {
+    const randomImageData = imagesSet[getRandomInt(0, imagesSet.length - 1)];
+    const { start, end, url } = randomImageData;
+
+    image$.attr("src", url);
+    dog$
+      .css(start.cssStyles())
+      .show()
+      .animate(start.animStyles(), {
+        duration: start.animOptions.duration,
+      })
+      .delay(start.animOptions.duration + start.animOptions.delay)
+      .animate(end.animStyles(), {
+        duration: end.animOptions.duration,
+        complete: () => {
+          dog$.removeAttr("style").hide();
+          startRandom();
+        },
+      });
+  }
 }
